@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style-991px.css">
+    <title>LogIn Form</title>
+</head>
+
+<body>
+    <section class="starter">
+        <div class="container">
+            <div class="user shoppingCard">
+                <h1>Мій кошик</h1>
+                <div class="listOfProducts"></div>
+                <div class="listFooter">
+                    <span class="total"></span>
+                    <div class="orderBtns">
+                        <button class="orderBtn back">Повернутись до вибору товарів</button>
+                        <button class="orderBtn makeOrder">Перейти до оформлення</button>
+                    </div>
+                </div>
+            </div>
+            <div class="user signinBx">
+                <div class="orderBx">
+                    <div class="orderDetail">
+                        <h2>В замовленні:</h2>
+                    </div>
+                    <p class="orderTotal"></p>
+                </div>
+                <div class="formBx">
+                    <form class="cartForm">
+                        <div class="userData">
+                            <h2>Отримувач замовлення</h2>
+                            <input type="text" name="userName" required
+                                title="Латиницею, використання спец. символів не допускається" placeholder="П.І.Б."
+                                pattern="^[А-Яа-яЁёіІїЇєЄ'\s]+$">
+                            <input name="phone" id="online_phone" required type="tel" autocorrect="off"
+                                autocomplete="tel" maxlength="27" value="+38(___)___-__-__"
+                                placeholder="+38(___)___-__-__">
+                            <div class="dontCall">
+                                <label>
+                                    <input type="checkbox" class="dontCallCheck" name="dontCall">
+                                    Не телефонувати для підтвердження
+                                </label>
+                            </div>
+                            <select name="citiesSelect">
+                                <option name="Kyiv" value="city1" selected>Київ</option>
+                                <option name="Kharkiv" value="city2">Харків</option>
+                                <option name="Dnipro" value="city3">Дніпро</option>
+                                <option name="Odesa" value="city4">Одеса</option>
+                                <option name="Lviv" value="city5">Львів</option>
+                            </select>
+                            <input type="email" name="email" autocapitalize="off" autocorrect="off" autocomplete="email"
+                                placeholder="Email">
+                            <input type="password" name="password"
+                                title="Мінімум 8 символів, одна цифра,&#013;одна буква в верхньому регістрі&#013;та одна в нижньому"
+                                class="password" autocomplete="on"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                                placeholder="Введіть пароль для реєстрації">
+                            <input type="password" name="confirmPassword" class="confirmPassword" autocomplete="on"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                                placeholder="Повторіть пароль">
+                        </div>
+                        <div class="shipmentData">
+                            <h2>Доставка</h2>
+                            <select name="shipmentSelect">
+                                <option value="novaPoshta">Нова Пошта</option>
+                                <option value="delivery">Кур'єром до дверей</option>
+                                <option value="pickup" selected>Самовивіз</option>
+                            </select>
+                        </div>
+                        <div class="paymentData">
+                            <h2>Оплата</h2>
+                            <select name="paymentSelect">
+                                <option value="cash" selected>Готівкою при отриманні</option>
+                                <option value="online">Сплатити при оформленні</option>
+                            </select>
+                        </div>
+                        <input type="submit" name="submit" value="Підтвердити" class="submit">
+                        <p class="signup">Вже зареєстровані? <a href="#" onclick="toggleForm();"> Увійти в особистий
+                                кабінет</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form class="loginForm">
+                        <h2>Увійти</h2>
+                        <input type="text" name="name" placeholder="Email або телефон">
+                        <input type="password" name="password" placeholder="Пароль" autocomplete="on">
+                        <input type="submit" name="" value="Login" class="login">
+                        <p class="signup">Не зареєстровані? <a href="#" onclick="toggleForm();"> Продовжити без
+                                реєстрації</a></p>
+                    </form>
+                </div>
+                <div class="logInBx">
+                    <h2>Раді знову Вас бачити</h2>
+                    <h2>Введіть свої дані, щоб ми</h2>
+                    <h2>змогли Вас ідентифікувати</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script/main.js"></script>
+    <script src="./script/form.js"></script>
+    <script src="./script/cart.js"></script>
+    <script src="./script/goods.js"></script>
+    <script src="./script/delivery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+@media (max-width: 991px) {
+	section {
+		height: 100vh;
+		width: 100vw;
+		padding: 0;
+	}
+
+	section .container {
+		height: 100vh;
+		border-radius: 0;
+	}
+
+	/* SHOPPING CARD */
+	/* SHOPPING CARD */
+	/* SHOPPING CARD */
+
+	section .container .shoppingCard .listFooter {
+		flex-direction: column-reverse;
+		margin: 0 10px;
+	}
+
+	section .container .shoppingCard .listFooter .orderBtns {
+		width: 100%;
+	}
+
+	section .container .shoppingCard .listFooter .orderBtns .orderBtn {
+		font-size: 12px;
+	}
+
+	section .container .shoppingCard .listOfProducts .cardDiv {
+		height: 90px;
+		padding: 5px;
+	}
+
+	section .container .shoppingCard .listOfProducts .cardDiv .goodPhoto {
+		visibility: hidden;
+		width: 0;
+	}
+
+	section .container .shoppingCard .listOfProducts .cardDiv .goodDescr {
+		width: 60%;
+		font-size: 13px;
+	}
+
+	section .container .shoppingCard .listOfProducts .cardDiv .quantityDiv {
+		height: 66px;
+		flex-direction: column-reverse;
+	}
+
+	section .container .shoppingCard .listOfProducts .cardDiv .quantityDiv .qtyBtn {
+		width: 22px;
+		height: 22px;
+		padding: 5px;
+	}
+
+	section .container .shoppingCard .listOfProducts .cardDiv .quantityDiv .goodQuantity {
+		line-height: 22px;
+		width: 22px;
+		height: 22px;
+	}
+
+	section .container .shoppingCard .listOfProducts .cardDiv .goodPrice {
+		font-size: 13px;
+	}
+
+	section .container .shoppingCard .listOfProducts .cardDiv .goodSumm {
+		font-size: 13px;
+	}
+
+	/* USER BOX */
+	/* USER BOX */
+	/* USER BOX */
+
+	section .container .user {
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+	}
+
+	section .container .user::-webkit-scrollbar {
+		width: 0;
+	}
+
+	section .container .user::-webkit-scrollbar-track {
+		background: rgba(124, 124, 124, 0.2);
+	}
+
+	section .container .user::-webkit-scrollbar-thumb {
+		background-color: rgba(124, 124, 124, 0.5);
+		border-radius: 20px;
+	}
+
+	.section .container .user.signinBx {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	section .container .user .orderBx {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: rgb(238, 238, 238);
+		transition: 0.5s;
+		padding: 40px 20px;
+
+	}
+
+	section .container .user .orderBx .orderTotal {
+		font-size: 16px;
+	}
+
+	section .container .user .orderBx .goodDescr {
+		font-size: 13px;
+	}
+
+
+	section .container .user .orderBx .goodQuantity {
+		font-size: 13px;
+	}
+
+	section .container .user .orderBx .goodPrice {
+		font-size: 13px;
+	}
+
+	section .container .user .orderBx .goodSumm {
+		font-size: 13px;
+	}
+
+
+	section .container .user .formBx {
+		width: 100%;
+	}
+
+	section .container.active .signupBx {
+		flex-direction: column-reverse;
+	}
+
+	section .container .signupBx .formBx {
+		top: 100%;
+		background: rgb(238, 238, 238);
+	}
+
+	section .container.active .signupBx .formBx {
+		top: 0%;
+	}
+
+	section .container .signupBx .logInBx {
+		background: rgb(238, 238, 238);
+		width: 100%;
+		height: max-content;
+	}
+}

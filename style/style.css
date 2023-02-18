@@ -1,0 +1,443 @@
+/* NORMALIZE */
+/* NORMALIZE */
+/* NORMALIZE */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+section {
+	background-image: url(../img/whiteBackground.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+
+section.starter {
+	background-image: url(../img/background.jpg);
+	transition: 0.5s;
+}
+
+section.active {
+	background-image: url(../img/greyBackground.jpg);
+	transition: 0.5s;
+}
+
+section .container {
+	position: relative;
+	width: 1300px;
+	height: 800px;
+	background: #fff;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, .1);
+	overflow: hidden;
+	border: 5px solid #abcea1;
+	border-radius: 20px;
+}
+
+section .container .user {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.signinBx,
+.signupBx {
+	z-index: 5;
+}
+
+h2 {
+	color: #728a6b;
+}
+
+/* SHOPPING CARD */
+/* SHOPPING CARD */
+/* SHOPPING CARD */
+
+section .container .shoppingCard {
+	z-index: 10;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+section .container .shoppingCard h1 {
+	color: #829c7b;
+	font-size: 32px;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-right: 40px;
+	text-align: right;
+}
+
+section .container .shoppingCard .listOfProducts {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	width: 95%;
+	height: 85%;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, .1);
+	overflow-y: auto;
+}
+
+section .container .shoppingCard .listOfProducts::-webkit-scrollbar {
+	width: 0;
+}
+
+section .container .shoppingCard .listOfProducts::-webkit-scrollbar-track {
+	background: rgba(124, 124, 124, 0.2);
+}
+
+section .container .shoppingCard .listOfProducts::-webkit-scrollbar-thumb {
+	background-color: rgba(124, 124, 124, 0.5);
+	border-radius: 20px;
+}
+
+section .container .shoppingCard .listFooter {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 30px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+section .container .shoppingCard .listFooter .total {
+	color: #829c7b;
+	font-size: 32px;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+section .container .shoppingCard .listFooter .orderBtns {
+	margin-top: 10px;
+	width: 550px;
+	height: 40px;
+}
+
+section .container .shoppingCard .listFooter .orderBtns .orderBtn {
+	width: 49%;
+	height: 100%;
+	background: #e2eede;
+	color: #728a6b;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: 0.5s;
+	border: 4px solid #abcea1;
+	border-radius: 10px;
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv {
+	display: flex;
+	align-items: center;
+	height: 130px;
+	margin: 5px 10px;
+	padding: 10px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv .goodPhoto {
+	width: 110px;
+	height: 110px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv .goodDescr {
+	width: 50%;
+	padding: 10px;
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv .quantityDiv {
+	height: 30px;
+	display: flex;
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv .quantityDiv .qtyBtn {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv .quantityDiv .goodQuantity {
+	align-items: center;
+	text-align: center;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv .goodPrice {
+	width: 12%;
+	padding: 10px;
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv .goodSumm {
+	width: 12%;
+	padding: 10px;
+}
+
+section .container .shoppingCard .listOfProducts .cardDiv .cardBin {
+	width: 30px;
+	height: 35px;
+	cursor: pointer;
+	background-image: url(../img/bin.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* USER BOX */
+/* USER BOX */
+/* USER BOX */
+
+section .container .user {
+	transition: 0.5s;
+}
+
+section .container .user .orderBx {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: rgb(255, 255, 255);
+	transition: 0.5s;
+	padding: 40px 20px;
+	background-image: url(../img/background.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section .container .user .orderBx .orderTotal {
+	font-size: 18px;
+	font-weight: 600;
+	color: #5a6d54;
+}
+
+section .container .user .orderBx .orderItem {
+	display: flex;
+	border-bottom: 2px solid #555;
+	padding: 2px;
+}
+
+section .container .user .orderBx .goodDescr {
+	width: 55%;
+	padding: 2px;
+}
+
+
+section .container .user .orderBx .goodQuantity {
+	width: 5%;
+	padding: 2px;
+}
+
+section .container .user .orderBx .goodPrice {
+	width: 20%;
+	padding: 2px;
+}
+
+section .container .user .orderBx .goodSumm {
+	width: 20%;
+	padding: 2px;
+}
+
+
+section .container .user .formBx {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	transition: 0.5s;
+}
+
+section .container .user .formBx form h2 {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	color: #728a6b;
+}
+
+section .container .user .formBx form input {
+	width: 100%;
+	padding: 10px;
+	background: #f5f5f5;
+	color: #333;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	font-size: 14px;
+	margin: 8px 0;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+select,
+option {
+	width: 100%;
+	padding: 10px;
+	background: #f5f5f5;
+	color: #728a6b;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	font-size: 14px;
+	margin: 8px 0;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+section .container .user .formBx form input[type="submit"] {
+	max-width: 120px;
+	background: #e2eede;
+	color: #728a6b;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: 0.5s;
+	border: 4px solid #abcea1;
+	border-radius: 10px;
+}
+
+section .container .user .formBx form input[type="checkbox"] {
+	max-width: 20px;
+	margin-right: 20px;
+	cursor: pointer;
+	border-color: #abcea1;
+}
+
+.dontCall {
+	display: flex;
+}
+
+.dontCall label {
+	width: 100%;
+	font-size: 14px;
+	margin: 8px 0;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+section .container .user .formBx form .signup {
+	position: relative;
+	margin-top: 20px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #555;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+section .container .user .formBx form .signup a {
+	font-weight: 600;
+	text-decoration: none;
+	color: #728a6b;
+}
+
+section .container .signupBx {
+	pointer-events: none;
+}
+
+section .container.active .signupBx {
+	pointer-events: initial;
+}
+
+section .container .signupBx {
+	pointer-events: none;
+}
+
+section .container.active .signupBx {
+	pointer-events: initial;
+}
+
+section .container .signupBx .formBx {
+	top: 100%;
+}
+
+section .container.active .signupBx .formBx {
+	top: 0%;
+}
+
+section .container .signupBx .logInBx {
+	top: -100%;
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px;
+	padding-top: 200px;
+	transition: 0.5s;
+	background-image: url(../img/background.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+section .container .signinBx .orderBx .orderDetail .h2 {
+	color: #728a6b;
+}
+
+section .container .signupBx .logInBx h2 {
+	display: block;
+	color: 728a6b;
+}
+
+section .container .signupBx .logInBx h2:first-child {
+	display: block;
+	margin-bottom: 40px;
+}
+
+section .container.active .signupBx .logInBx {
+	top: 0%;
+}
+
+section .container .signinBx .formBx {
+	top: 0;
+}
+
+section .container.active .signinBx .formBx {
+	top: 100%;
+}
+
+section .container .signinBx .orderBx {
+	top: 0;
+}
+
+section .container.active .signinBx .orderBx {
+	top: -100%;
+}
