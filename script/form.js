@@ -71,7 +71,7 @@ const sendData = async (url, data) => {
 const sendCard = () => {
     const cartForm = document.querySelector(".cartForm");
     cartForm.addEventListener('submit', e => {
-        e.preventDefault();
+        // e.preventDefault();
 
         const formData = new FormData(cartForm);
         const data = {};
@@ -114,7 +114,7 @@ const getResourse = async (url, data) => {
 const getData = () => {
     const loginForm = document.querySelector(".loginForm");
     loginForm.addEventListener('submit', e => {
-        e.preventDefault();
+        // e.preventDefault();
 
         const formData = new FormData(loginForm);
         const data = {};
